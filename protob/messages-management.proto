@@ -249,6 +249,14 @@ message RecoveryDevice {
 }
 
 /**
+ * Response: If recovery is a multi-step process, this message is returned
+ * after non-final mnemonic is set.
+ * @end
+ */
+message RecoveryDeviceInProgress {
+}
+
+/**
  * Response: Device is waiting for user to enter word of the mnemonic
  * Its position is shown only on device's internal display.
  * @next WordAck
